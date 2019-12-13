@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Musica</title>
+        <!-- meta per media query -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- link Fontaweson -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+        <!-- link x jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <!-- Link Google Font -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+        <!-- link al file Javascript -->
+        <script src="main.js" charset="utf-8"></script>
+        <!-- link al foglio di stile -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo-container">
+                <img src="logo.png" alt="logo Spotify">
+            </div>
+        </header>
+        <main>
+            <div class="main-container"></div>
+        </main>
+
+
+        <script id="disk-template" type="text/x-handlebars-template">
+            <div class="disk-card">
+                <img class="disk-img" src="https://www.onstageweb.com/wp-content/uploads/2018/09/bon-jovi-new-jersey.jpg" alt="New Yersey">
+                <p class="title">New Jersey</p>
+                <small class="author">Bon Jovi</small>
+                <small class="release">1988</small>
+            </div>
+        </script>
+    </body>
+</html>
