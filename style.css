@@ -52,10 +52,14 @@ main {
 .title {
     text-transform: uppercase;
     text-align: center;
-    font-size: 22px;
-    margin: 20px 0;
+    font-size: 18px;
+    margin-top: 20px;
     font-weight: bold;
     color: white;
+}
+
+.author {
+    margin-top: 40px;
 }
 
 .author, .release {

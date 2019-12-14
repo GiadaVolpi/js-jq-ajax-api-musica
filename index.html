@@ -3,6 +3,8 @@
     <head>
         <meta charset="utf-8">
         <title>Musica</title>
+        <!-- script Handlebars -->
+        <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
         <!-- meta per media query -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- link Fontaweson -->
@@ -23,16 +25,16 @@
             </div>
         </header>
         <main>
-            <div class="main-container"></div>
+            <div id="discs" class="main-container"></div>
         </main>
 
 
         <script id="disk-template" type="text/x-handlebars-template">
             <div class="disk-card">
-                <img class="disk-img" src="https://www.onstageweb.com/wp-content/uploads/2018/09/bon-jovi-new-jersey.jpg" alt="New Yersey">
-                <p class="title">New Jersey</p>
-                <small class="author">Bon Jovi</small>
-                <small class="release">1988</small>
+                <img class="disk-img" src="{{ cover }}" alt="{{ title }} by {{ author }}">
+                <p class="title">{{ title }}</p>
+                <small class="author">{{ author }}</small>
+                <small class="release">{{ release }}</small>
             </div>
         </script>
     </body>
