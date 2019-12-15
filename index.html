@@ -25,12 +25,21 @@
             </div>
         </header>
         <main>
+            <div class="select-container">
+                <select id="genre-select">
+                    <option>Scegli un genere</option> <!-- la prima option è quella che si visualizza di default-->
+                    <option value="pop">Pop</option>
+                    <option value="rock">Rock</option>
+                    <option value="jazz">Jazz</option>
+                    <option value="metal">Metal</option>
+                </select>
+            </div>
             <div id="discs" class="main-container"></div>
         </main>
 
 
         <script id="disk-template" type="text/x-handlebars-template">
-            <div class="disk-card">
+            <div class="disk-card" data-genre="{{ genre }}">
                 <img class="disk-img" src="{{ cover }}" alt="{{ title }} by {{ author }}">
                 <p class="title">{{ title }}</p>
                 <small class="author">{{ author }}</small>

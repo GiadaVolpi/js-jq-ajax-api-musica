@@ -20,11 +20,22 @@ header {
 
 .logo-container img {
     width: 60px;
+    margin-top: 10px;
 }
 
 main {
     background-color: #1e2d3b;
-    padding-top: 80px;
+    padding-top: 40px;
+}
+
+.select-container {
+    display: flex;
+    justify-content: center;
+}
+
+#kind-select {
+    margin-bottom: 40px;
+    padding: 5px 25px 5px 5px;
 }
 
 .main-container {

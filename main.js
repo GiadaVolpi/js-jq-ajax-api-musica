@@ -37,4 +37,10 @@ $(document).ready (function () {
                 alert ("Error");
             }
         });
+
+    // cambio di valore in una select
+    $("#genre-select").change (function () {
+        var genreSelected = $(this).val();
+        console.log(genreSelected);
+    });
 })
